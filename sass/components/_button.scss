@@ -1,0 +1,44 @@
+.btn:link,.btn:visited{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    text-transform: uppercase;
+    font-size: 25px;
+letter-spacing: -2.5px;
+word-spacing: 0.8px;
+color: #ffffff;
+font-weight: 700;
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+padding-top: 15px;
+padding-bottom: 15px;
+padding-left: 20px;
+padding-right: 20px;
+display: inline-block;
+border-radius: 50px;
+text-decoration: coral;
+transition: all .2s;
+
+}
+.btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.btn:active{
+    transform:translateY(-1px) ;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.btn-black:link{
+background-color: rgb(78, 173, 115);
+margin-top: 70%;
+margin-left: 20%;
+margin-bottom: 50%;
+}
+.btn-add:link{
+    background-color: red;
+   
+    &:focus{
+        background-color: green;
+        content: "Added";
+        visibility: visible;
+    }
+}

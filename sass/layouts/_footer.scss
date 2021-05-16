@@ -1,0 +1,47 @@
+.footer{
+    margin-top: 20px;
+    width: 100%;
+    background-color: grey;
+    background-size: cover;
+    height: 400px;
+
+    &__logobox{
+        width: 50px;
+        height:60px;
+        position: relative;
+        margin-left: 550px;
+        margin-bottom: 8rem;
+        
+    }
+    &__list{
+        list-style: none;
+    }
+    &__item{
+        display: inline-block;
+    }
+    &__link{
+        &:link,&:visited{
+            color: rgb(227, 236, 218);
+            text-decoration: none;
+            text-transform: uppercase;
+           
+        }
+        &:hover,&:active{
+            color: lawngreen;
+            box-shadow: 0 1rem 2rem rgba(36, 37, 35,.4); 
+
+        }
+       
+    }
+    &__social{
+        width: 30px;
+        height: 30px;
+        &:hover,&:active{
+            
+         box-shadow: 0 1rem 2rem rgba(36, 37, 35,.4); 
+
+        }
+
+    }
+
+}
