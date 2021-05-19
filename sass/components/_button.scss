@@ -9,12 +9,12 @@ font-weight: 700;
 font-style: normal;
 font-variant: normal;
 text-transform: none;
-padding-top: 15px;
-padding-bottom: 15px;
-padding-left: 20px;
-padding-right: 20px;
+padding-top: 5px;
+padding-bottom: 5px;
+padding-left: 15px;
+padding-right: 15px;
 display: inline-block;
-border-radius: 50px;
+border-radius: 20px;
 text-decoration: coral;
 transition: all .2s;
 
@@ -42,3 +42,12 @@ margin-bottom: 50%;
         visibility: visible;
     }
 }
+
+.btn-blue:link{
+    background-color: rgb(51, 133, 255);
+    margin-top: 20px;
+   
+}
+    
+
+

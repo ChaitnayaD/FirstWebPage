@@ -1,14 +1,18 @@
 .card{
      perspective: 120rem;
      -moz-perspective: 150rem;
- 
+    
      position: relative;
+     
+     
+     
      &__side{
         width: 18rem;
         transition: all 0.6s;
         position: absolute;
-        height: 25rem;
+        height: 30rem;
         padding-left: 0.4rem;
+      
         padding-right: 0.4rem;
         backface-visibility: hidden;
         border-radius: 3px;
@@ -88,10 +92,10 @@
          font-weight: 700;
          color: darkblue;
          margin-bottom: 0;
-        
-         
-         
-         
+     }
+     &__price{
+        color: brown;
+        font-size: 25px;
 
      }
      &__logo{

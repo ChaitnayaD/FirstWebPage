@@ -2,21 +2,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
-
-body {
-  font-family: "Lato", "Helvetica Neue", Helvetica, sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.7;
-  padding: 25px;
-  color: chocolate; }
+  * body {
+    font-family: "Lato", "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    padding: 25px;
+    color: chocolate; }
 
 .specialities {
   position: relative; }
 
 .recommendations {
   position: relative;
-  margin-top: 900px; }
+  margin-bottom: 20px; }
 
 .review {
   background-image: url("../images/special.jpg"); }
@@ -48,16 +47,39 @@ body {
   top: 20%;
   color: rgba(46, 0, 0, 0.8); }
 
+.topnav {
+  background-color: #333;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  z-index: 1;
+  top: 0; }
+
+.topnav a {
+  float: left;
+  margin-left: 60px;
+  margin-right: 20px;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 17px; }
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black; }
+
 .row {
   max-width: 114rem;
+  max-height: max-content;
   margin-bottom: 30px;
-  display: inline-flexbox; }
+  overflow: hidden; }
 
 .col-1-of-3 {
   width: 21.5rem;
-  padding: 2rem;
+  padding: 1.5rem;
   float: left;
-  height: 25rem; }
+  height: 30rem; }
 
 .col-1-of-2 {
   display: inline-block;
@@ -70,11 +92,12 @@ body {
   margin-bottom: 30px; }
 
 .marg1 {
-  margin-top: 1.9rem; }
+  margin-top: 0rem; }
 
 .row1 {
   max-width: 114rem;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  opacity: 0.9; }
 
 .btn:link, .btn:visited {
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
@@ -87,12 +110,12 @@ body {
   font-style: normal;
   font-variant: normal;
   text-transform: none;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
   display: inline-block;
-  border-radius: 50px;
+  border-radius: 20px;
   text-decoration: coral;
   transition: all .2s; }
 
@@ -117,6 +140,10 @@ body {
     content: "Added";
     visibility: visible; }
 
+.btn-blue:link {
+  background-color: #3385ff;
+  margin-top: 20px; }
+
 .card {
   perspective: 120rem;
   -moz-perspective: 150rem;
@@ -125,7 +152,7 @@ body {
     width: 18rem;
     transition: all 0.6s;
     position: absolute;
-    height: 25rem;
+    height: 30rem;
     padding-left: 0.4rem;
     padding-right: 0.4rem;
     backface-visibility: hidden;
@@ -174,6 +201,9 @@ body {
     font-weight: 700;
     color: darkblue;
     margin-bottom: 0; }
+  .card__price {
+    color: brown;
+    font-size: 25px; }
   .card__logo {
     background-image: url("../images/vlogo.jpg");
     width: 41px;
@@ -270,14 +300,13 @@ body {
   font-style: oblique;
   font-weight: 1000;
   font-size: 50px;
-  color: #310202; }
+  color: #fffbfb; }
 
 .head3-primary-sub {
   font-style: oblique;
-  font-weight: 800;
-  font-size: 40px;
-  color: brown;
-  margin-top: 50px; }
+  font-weight: 1000;
+  font-size: 60px;
+  color: #d7ff6a; }
 
 .title2 {
   font-size: 100px;
@@ -285,11 +314,11 @@ body {
 
 .title-primary-main {
   font-family: "Times New Roman", Times, serif;
-  font-size: 50px;
+  font-size: 60px;
   letter-spacing: -1.2px;
   word-spacing: 0.2px;
   color: #965050;
-  font-weight: 700;
+  font-weight: 900;
   text-decoration: none;
   font-style: italic;
   font-variant: normal;
@@ -298,11 +327,11 @@ body {
 
 .title-primary-sub {
   font-family: "Times New Roman", Times, serif;
-  font-size: 31px;
+  font-size: 60px;
   letter-spacing: -1.2px;
   word-spacing: 0.2px;
   color: #000000;
-  font-weight: 700;
+  font-weight: 900;
   text-decoration: none;
   font-style: italic;
   font-variant: normal;
@@ -312,11 +341,11 @@ body {
   text-align: center; }
 
 .review-head {
-  margin-top: 500px;
   text-align: center;
-  font-weight: 1000;
+  font-weight: 1200;
   font-size: 50px;
-  color: #fabf1c; }
+  color: #3b2d04;
+  opacity: 1; }
 
 .title3 {
   font-size: 80px;
@@ -330,7 +359,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
-  justify-content: center;
+  justify-content: right;
   align-items: center; }
 
 .searchBox input {
@@ -376,6 +405,7 @@ body {
   width: 80%;
   margin: 0 auto;
   background-color: #66c7af;
+  opacity: 1;
   border-radius: 3px;
   padding: 6rem;
   transform: skewX(-12deg); }
@@ -395,7 +425,8 @@ body {
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
     transform: translate(-3rem);
-    position: relative; }
+    position: relative;
+    opacity: 1; }
   .story__image {
     height: 100%; }
   .story__caption {
@@ -438,7 +469,7 @@ body {
     width: 50px;
     height: 60px;
     position: relative;
-    margin-left: 550px;
+    margin-left: 560px;
     margin-bottom: 8rem; }
   .footer__list {
     list-style: none; }
@@ -461,6 +492,18 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: -1;
   width: 100%;
   height: 100%;
-  z-index: -1; }
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  left: 0px;
+  top: 0px;
+  overflow: hidden;
+  object-fit: cover; }
+  .bgvideo__content {
+    min-height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0; }

@@ -2,12 +2,15 @@
     width: 80%;
     margin: 0 auto;
     background-color: rgb(102, 199, 175);
+    opacity: 1;
+    
     border-radius: 3px;
     padding: 6rem;
     transform: skewX(-12deg);
 
     &:hover{
-        transform:skewX(12deg)
+        transform:skewX(12deg);
+        
     }
     &__text{
         padding-top: 0px;
@@ -26,6 +29,7 @@
         clip-path: circle(50% at 50% 50%);
         transform: translate(-3rem);
         position: relative;
+        opacity: 1;
     }
     &__image{
         height: 100%;

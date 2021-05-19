@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    }
+   
     body{
          font-family: "Lato", "Helvetica Neue", Helvetica, sans-serif;
          font-weight: 400;
@@ -12,20 +12,22 @@
          color: chocolate;
      
      }
+}
 .specialities{
     
      position: relative;
-    
      
      
-      
-
+     
 }
 
 .recommendations{
 
      position: relative;
-     margin-top: 900px;
+     
+ margin-bottom: 20px;
+     
+     
      
 
    
@@ -34,6 +36,7 @@
 .review{
     
      background-image: url("../images/special.jpg");
+   
 }
 .section-form{
      padding: 0 auto;
@@ -57,4 +60,10 @@
    &__form{
      width: 75%;
    }
+
 }
+
+    
+     
+     
+   

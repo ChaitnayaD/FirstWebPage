@@ -1,16 +1,18 @@
 .row {
     max-width: 114rem;
    
-    margin-bottom: 30px;
-    
-    display: inline-flexbox; 
+ max-height: max-content;
+ margin-bottom: 30px;
+    overflow: hidden;
+   
    
 }
 .col-1-of-3{
  width: 21.5rem;
- padding: 2rem;
+ padding: 1.5rem;
  float: left;
- height: 25rem;
+ height: 30rem;
+ 
  
 
 }
@@ -32,10 +34,11 @@
   
 }
 .marg1{
-    margin-top: 1.9rem;
+    margin-top: 0rem;
 }
 
 .row1{
     max-width: 114rem; 
     margin-bottom: 10px;
+    opacity: 0.9;
 }
